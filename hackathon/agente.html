@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <a href="index.html" class="agent-link">Entrar como paciente</a>
+            <form id="login-form">
+                <img src="imagens/mais saúde ++.png" alt="Logo">
+                <h2>Login do Agente:</h2>
+                <input type="text" id="usuario" placeholder="Usuário" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <div id="error-message" style="color: red; margin: 10px 0;"></div>
+                <button type="submit">Entrar</button>
+                <a href="#">Cadastre-se</a>
+                <a href="#">Esqueceu sua senha?</a>
+            </form>
+            
+            <!-- Formulário para login de agente (inicialmente oculto) -->
+            <form id="agent-login-form" style="display: none;">
+                <h2>Login para Agentes</h2>
+                <input type="text" id="agent-id" placeholder="ID do Agente" required>
+                <input type="password" id="agent-senha" placeholder="Senha do Agente" required>
+                <button type="submit">Entrar como Agente</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
